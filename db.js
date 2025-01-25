@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const mongoURL = mongoDBURL;
-mongoose.connect(mongoDBURL); //Define URL and pass it onto this function for establishing connection.
+const mongoURL = process.env.mongoDBURL;
+mongoose.connect(mongoURL); //Define URL and pass it onto this function for establishing connection.
 
 const db = mongoose.connection; //Object which you will use further for establishing connection further with Node JS Server.
 
