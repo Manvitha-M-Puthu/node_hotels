@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/hotels'); //Define URL and pass it onto this function for establishing connection.
+const mongoURL = mongoDBURL;
+mongoose.connect(mongoDBURL); //Define URL and pass it onto this function for establishing connection.
 
 const db = mongoose.connection; //Object which you will use further for establishing connection further with Node JS Server.
 

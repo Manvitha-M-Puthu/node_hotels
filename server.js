@@ -6,7 +6,7 @@ const menuItemRoute = require('./routers/MenuItemRoute');
 
 
 const app=express();
-const port = 3000;
+const port = PORT;
 app.use(bodyParser.json()); //Processes the request body in the required format before it hits the route. Accessed by req.body
 
 app.get('/',(req,res)=>{
